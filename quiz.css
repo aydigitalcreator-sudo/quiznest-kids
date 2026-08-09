@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eaf6ff;
+    padding:20px;
+}
+
+.container{
+    max-width:450px;
+    margin:auto;
+}
+
+header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+#backBtn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#2196F3;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    margin-bottom:20px;
+}
+
+h1{
+    color:#2196F3;
+    margin-bottom:10px;
+}
+
+#questionNumber{
+    color:#666;
+}
+
+.question-box{
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    margin-bottom:20px;
+    text-align:center;
+}
+
+#question{
+    font-size:22px;
+    color:#333;
+}
+
+.answers{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.answer-btn{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#ffffff;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+    font-size:18px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.answer-btn:hover{
+    background:#f2f2f2;
+}
+
+.correct{
+    background:#4CAF50 !important;
+    color:#fff;
+}
+
+.wrong{
+    background:#F44336 !important;
+    color:#fff;
+}
+
+#nextBtn{
+    width:100%;
+    margin-top:20px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#FFC107;
+    color:#000;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+
+    display:none;
+}
+
+footer{
+    text-align:center;
+    margin-top:25px;
+}
+
+#score{
+    font-size:18px;
+    font-weight:bold;
+    color:#333;
+}/* Quiz Finished Screen */
+
+.result-screen{
+    min-height:80vh;
+    padding:35px 20px;
+    text-align:center;
+    border-radius:20px;
+
+    background:linear-gradient(
+        120deg,
+        #ffe082,
+        #80deea,
+        #ce93d8,
+        #81d4fa,
+        #a5d6a7
+    );
+
+    background-size:400% 400%;
+
+    animation:childrenColors 10s ease infinite;
+}
+@keyframes childrenColors{
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+.confetti{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.result-screen h1{
+    color:#2196F3;
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.result-screen h2{
+    color:#333;
+    margin-bottom:5px;
+}
+
+.final-score{
+    font-size:60px;
+    font-weight:bold;
+    color:#2196F3;
+    margin-bottom:30px;
+}
+
+.play-again,
+.home-button{
+    display:block;
+    width:100%;
+    margin-top:15px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.play-again{
+    background:#2196F3;
+    color:white;
+}
+
+.home-button{
+    background:#4CAF50;
+    color:white;
+}#backBtn{
+    background:#2196F3;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+}
+
+#backBtn:active{
+    transform:scale(0.98);
+}.result-screen{
+    position:relative;
+    ooverflow:hidden;
+    animation:popIn 0.6s ease;
+}
+
+.result-screen::before{
+    content:"🎈 ⭐ 🎈 ⭐ 🎈";
+    position:absolute;
+    top:-10px;
+    left:0;
+    width:100%;
+    font-size:28px;
+    animation:floatBalloons 3s infinite linear;
+}
+
+.stars{
+    font-size:32px;
+    animation:starBounce 1s infinite alternate;
+}
+
+.final-score{
+    animation:scorePop 0.8s ease;
+}
+
+@keyframes popIn{
+    from{
+        transform:scale(0.7);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes floatBalloons{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(25px);
+    }
+}
+
+@keyframes starBounce{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.2);
+    }
+}
+
+@keyframes scorePop{
+    from{
+        transform:scale(0.5);
+    }
+    to{
+        transform:scale(1);
+    }
+}.result-screen button{
+    display:block;
+    width:90%;
+    max-width:300px;
+    margin:12px auto;
+    padding:14px;
+    border:none;
+    border-radius:18px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:transform 0.2s;
+}
+
+.result-screen button:active{
+    transform:scale(0.95);
+}
+
+.result-screen button:first-of-type{
+    background:#4CAF50;
+    color:white;
+}
+
+.result-screen button:last-of-type{
+    background:#2196F3;
+    color:white;
+  }

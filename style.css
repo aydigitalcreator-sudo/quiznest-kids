@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eaf6ff;
+    padding:20px;
+}
+
+.container{
+    max-width:450px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#2196F3;
+    margin-top:20px;
+}
+
+.tagline{
+    text-align:center;
+    color:#666;
+    margin:8px 0 25px;
+}
+
+h2{
+    margin-bottom:15px;
+    color:#333;
+}
+
+.game-card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.game-card h3{
+    color:#333;
+    margin-bottom:10px;
+}
+
+.game-card p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#4CAF50;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#43a047;
+}
+
+.locked{
+    opacity:.65;
+}

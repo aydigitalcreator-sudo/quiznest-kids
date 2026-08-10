@@ -1,1 +1,107 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e8f5ff;
+    color: #222;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 25px 18px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 10px 0;
+    color: #2196f3;
+}
+
+#questionNumber {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.question-card {
+    background: white;
+    border-radius: 25px;
+    padding: 35px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#question {
+    font-size: 28px;
+    margin: 0;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.answer-btn {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 18px;
+    background: white;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.answer-btn:hover {
+    transform: scale(1.02);
+}
+
+.answer-btn.correct {
+    background: #
+4caf50;
+    color: white;
+}
+
+.answer-btn.wrong {
+    background: #f44336;
+    color: white;
+}
+
+#nextBtn {
+    margin-top: 25px;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 18px;
+    background: #2196f3;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+#score {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    #question {
+        font-size: 24px;
+    }
+
+    .answer-btn {
+        font-size: 19px;
+    }
+  }

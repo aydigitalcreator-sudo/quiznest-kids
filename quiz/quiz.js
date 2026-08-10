@@ -129,7 +129,7 @@ function checkAnswer(selectedIndex){
         button.disabled = true;
     });
 
-    if(shuffledAnswers[selectedIndex].correct){
+    
 
         answerButtons[selectedIndex]
             .classList.add("correct");
